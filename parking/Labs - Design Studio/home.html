@@ -1,0 +1,609 @@
+<?php include('server.php') ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Parking Hero</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Labs - Design Studio">
+	<meta name="keywords" content="lab, onepage, creative, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->
+	<link href="img/favicon.ico" rel="shortcut icon"/>
+	<link rel="stylesheet" href="./style1.css">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,700|Roboto:300,400,700" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/flaticon.css"/>
+	<link rel="stylesheet" href="css/magnific-popup.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+
+
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<style>
+#contact.parallax-section{
+	background:url(img/contact.jpg) 50% 0 repeat-y fixed;
+	background-attachment: fixed !important;
+  background-size: cover !important;
+}
+#testimonial.parallax-section{
+	background:url(img/test.jpg) 50% 0 repeat-y fixed;
+	background-attachment: fixed !important;
+  background-size: cover !important;
+}
+#team.parallax-section{
+	background-attachment: fixed !important;
+  background-size: cover !important;
+}
+</style>
+<script>
+function validateform() {
+	var name=document.frm.name;
+	var email=document.frm.email;
+	var subject=document.frm.subject;
+	var message=document.frm.message;
+	
+	
+	if(name.value == ""){
+		name.focus();
+		alert("Name required");    
+		return false; 
+	}
+	
+	else if(!name.value.match(/^([a-z A-Z])*$/)) {
+		name.focus();
+		alert("Name must contain only Alphabets");  
+		return false; 
+		
+	} 
+
+	
+	if(email.value == ""){
+		email.focus();
+		alert("Please enter your Email-ID.\n");
+		return false;
+	}
+	else if(!email.value.match(/^([a-zA-Z0-9\.\_])+@([a-zA-Z0-9]+\.)+([a-zA-Z])+$/)) {
+		email.focus();
+		
+		alert("Please Enter a valid Email-ID");  
+		return false; 
+		
+	} 
+
+	if(subject.value == ""){
+		contactno.focus();
+		alert("Please enter your subject.");
+		return false;
+	}
+	
+		
+	if(document.getElementById("message").value=="")
+		
+	{
+		document.getElementById("message").focus();
+		alert("Please enter your message.");
+		return false;
+	}
+	
+		
+}
+</script>
+                   
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader">
+			<img src="img/preloader.gif" alt="">
+			<h2>Loading.....</h2>
+		</div>
+	</div>
+
+
+	<!-- Header section -->
+	<header class="header-section" style="line-height:2.1;">
+		<div class="logo">
+			<h1 style="color:#008080;font-size:25px;"><img src="img/parklogo.png" alt="">Parking Hero</h1><!-- Logo -->
+		</div>
+		<!-- Navigation -->
+		<div class="responsive"><i class="fa fa-bars"></i></div>
+		<nav>
+			<ul class="menu-list">
+				<li class="active"><a href="home.html">Home</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="register.php">Register</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li><a href="elements.html">Elements</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- Header section end -->
+
+
+	<!-- Intro Section -->
+	<div class="hero-section">
+		<div class="hero-content">
+			
+		</div>
+		<!-- slider -->
+		<div id="hero-slider" class="owl-carousel">
+			<div class="item  hero-item" data-bg="img/prius-parallel-park.gif"></div>
+			<!--<div class="item  hero-item" data-bg="img/02.jpg"></div>-->
+		</div>
+	</div>
+	<!-- Intro Section -->
+
+
+	<!-- About section -->
+	<div class="about-section">
+		<div class="overlay"></div>
+		<!-- card section -->
+		<div class="card-section">
+			<div class="container">
+				<div class="row">
+					<!-- single card -->
+					<div class="col-md-4 col-sm-6">
+						<div class="lab-card">
+							<div class="icon">
+								<i class="flaticon-023-flask"></i>
+							</div>
+							<h2>Get in the lab</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id, suscipit id nulla..</p>
+						</div>
+					</div>
+					<!-- single card -->
+					<div class="col-md-4 col-sm-6">
+						<div class="lab-card">
+							<div class="icon">
+								<i class="flaticon-011-compass"></i>
+							</div>
+							<h2>Projects online</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id, suscipit id nulla..</p>
+						</div>
+					</div>
+					<!-- single card -->
+					<div class="col-md-4 col-sm-12">
+						<div class="lab-card">
+							<div class="icon">
+								<i class="flaticon-037-idea"></i>
+							</div>
+							<h2>SMART MARKETING</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id, suscipit id nulla..</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- card section end-->
+
+
+		<!-- About contant -->
+		<div class="about-contant">
+			<div class="container">
+				<div class="section-title" style="margin-bottom:50px;">
+					<h2>About Us</h2>
+				</div>
+				<div class="row" style="padding-left:80px;padding-right:80px;">
+					
+						<p style="align:justify;">We believe that life is too short to spend time on parking. So we at Parking Hero strieve to provide all our customers and stakeholders with a hassle-free smart parking solution.
+						Our mission is to fully automate the parking spaces and bring them on a single platform.
+						Founded by a group of budding women enterpreneurs <span>Anviksha Dixit, Lavannya Goyal, Medha Gulati</span> and <span>Avishi Goyal.</span>Visioning to make your everday life easier and stress free.</p>
+					
+				</div>
+				
+				<!-- popup video -->
+				<div class="intro-video">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2">
+							<img src="img/video.png" alt="">
+							<a href="img/finalpitchvideo.mp4" class="video-popup">
+								<i class="fa fa-play"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- About section end -->
+
+
+	<!-- Testimonial section -->
+	<div id="testimonial" class="testimonial-section pb100 parallax-section" style="background-color:#111;opacity:0.9;">
+		<div class="test-overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-4" style="body{color:#111}">
+					<div class="section-title left">
+						<h2>What our clients say</h2>
+					</div>
+					<div class="owl-carousel" id="testimonial-slide">
+						<!-- single testimonial -->
+						<div class="testimonial">
+							<span>‘​‌‘​‌</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id, suscipit id nulla. Nulla sit amet luctus dolor. Etiam finibus consequa.</p>
+							<div class="client-info">
+								<div class="avatar">
+									<img src="img/avatar/01.jpg" alt="">
+								</div>
+								<div class="client-name">
+									<h2>Michael Smith</h2>
+									<p>CEO Company</p>
+								</div>
+							</div>
+						</div>
+						<!-- single testimonial -->
+						<div class="testimonial">
+							<span>‘​‌‘​‌</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id, suscipit id nulla. Nulla sit amet luctus dolor. Etiam finibus consequa.</p>
+							<div class="client-info">
+								<div class="avatar">
+									<img src="img/avatar/02.jpg" alt="">
+								</div>
+								<div class="client-name">
+									<h2>Michael Smith</h2>
+									<p>CEO Company</p>
+								</div>
+							</div>
+						</div>
+						<!-- single testimonial -->
+						<div class="testimonial">
+							<span>‘​‌‘​‌</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id, suscipit id nulla. Nulla sit amet luctus dolor. Etiam finibus consequa.</p>
+							<div class="client-info">
+								<div class="avatar">
+									<img src="img/avatar/01.jpg" alt="">
+								</div>
+								<div class="client-name">
+									<h2>Michael Smith</h2>
+									<p>CEO Company</p>
+								</div>
+							</div>
+						</div>
+						<!-- single testimonial -->
+						<div class="testimonial">
+							<span>‘​‌‘​‌</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id, suscipit id nulla. Nulla sit amet luctus dolor. Etiam finibus consequa.</p>
+							<div class="client-info">
+								<div class="avatar">
+									<img src="img/avatar/02.jpg" alt="">
+								</div>
+								<div class="client-name">
+									<h2>Michael Smith</h2>
+									<p>CEO Company</p>
+								</div>
+							</div>
+						</div>
+						<!-- single testimonial -->
+						<div class="testimonial">
+							<span>‘​‌‘​‌</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id, suscipit id nulla. Nulla sit amet luctus dolor. Etiam finibus consequa.</p>
+							<div class="client-info">
+								<div class="avatar">
+									<img src="img/avatar/01.jpg" alt="">
+								</div>
+								<div class="client-name">
+									<h2>Michael Smith</h2>
+									<p>CEO Company</p>
+								</div>
+							</div>
+						</div>
+						<!-- single testimonial -->
+						<div class="testimonial">
+							<span>‘​‌‘​‌</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id, suscipit id nulla. Nulla sit amet luctus dolor. Etiam finibus consequa.</p>
+							<div class="client-info">
+								<div class="avatar">
+									<img src="img/avatar/02.jpg" alt="">
+								</div>
+								<div class="client-name">
+									<h2>Michael Smith</h2>
+									<p>CEO Company</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Testimonial section end-->
+
+
+	<!-- Services section -->
+	<div id="services" class="services-section spad" style="background-color:#fff;">
+		<div class="container">
+			<div class="section-title dark">
+				<h2>Get in <span>the Lab</span> and see the services</h2>
+			</div>
+			<div class="row">
+				<!-- single service -->
+				<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<div class="icon">
+							<i class="flaticon-023-flask"></i>
+						</div>
+						<div class="service-text">
+							<h2>Get in the lab</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id, suscipit id nulla..</p>
+						</div>
+					</div>
+				</div>
+				<!-- single service -->
+				<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<div class="icon">
+							<i class="flaticon-011-compass"></i>
+						</div>
+						<div class="service-text">
+							<h2>Projects online</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id, suscipit id nulla..</p>
+						</div>
+					</div>
+				</div>
+				<!-- single service -->
+				<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<div class="icon">
+							<i class="flaticon-037-idea"></i>
+						</div>
+						<div class="service-text">
+							<h2>SMART MARKETING</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id, suscipit id nulla..</p>
+						</div>
+					</div>
+				</div>
+				<!-- single service -->
+				<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<div class="icon">
+							<i class="flaticon-039-vector"></i>
+						</div>
+						<div class="service-text">
+							<h2>Social Media</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id, suscipit id nulla..</p>
+						</div>
+					</div>
+				</div>
+				<!-- single service -->
+				<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<div class="icon">
+							<i class="flaticon-036-brainstorming"></i>
+						</div>
+						<div class="service-text">
+							<h2>Brainstorming</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id, suscipit id nulla..</p>
+						</div>
+					</div>
+				</div>
+				<!-- single service -->
+				<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<div class="icon">
+							<i class="flaticon-026-search"></i>
+						</div>
+						<div class="service-text">
+							<h2>Documented</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id, suscipit id nulla..</p>
+						</div>
+					</div>
+				</div>
+				<!-- single service -->
+				<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<div class="icon">
+							<i class="flaticon-018-laptop-1"></i>
+						</div>
+						<div class="service-text">
+							<h2>Responsive</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id, suscipit id nulla..</p>
+						</div>
+					</div>
+				</div>
+				<!-- single service -->
+				<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<div class="icon">
+							<i class="flaticon-043-sketch"></i>
+						</div>
+						<div class="service-text">
+							<h2>Retina ready</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id, suscipit id nulla..</p>
+						</div>
+					</div>
+				</div>
+				<!-- single service -->
+				<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<div class="icon">
+							<i class="flaticon-012-cube"></i>
+						</div>
+						<div class="service-text">
+							<h2>Ultra modern</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id, suscipit id nulla..</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="text-center">
+				<a href="" class="site-btn">Browse</a>
+			</div>
+		</div>
+	</div>
+	<!-- services section end -->
+
+
+	<!-- Team Section -->
+	<div id="team" class="team-section spad parallax-section">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="section-title">
+				<h2>Meet the team</h2>
+			</div>
+			<div class="row">
+				<!-- single member -->
+				<div class="col-sm-3">
+					<div class="member">
+						<img src="img/team/imageedit.gif" alt="">
+						<h2>Anviksha Dixit</h2>
+						<h3>Project Manager</h3>
+					</div>
+				</div>
+				<!-- single member -->
+				<div class="col-sm-3">
+					<div class="member">
+						<img src="img/team/imageedit_1.gif" alt="">
+						<h2>Lavannya Goyal</h2>
+						<h3>Junior developer</h3>
+					</div>
+				</div>
+				<!-- single member -->
+				<div class="col-sm-3">
+					<div class="member">
+						<img src="img/team/imageedit_2.gif" alt="">
+						<h2>Medha Gulati</h2>
+						<h3>Digital designer</h3>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="member">
+						<img src="img/team/imageedit_3.gif" alt="">
+						<h2>Avishi Goyal</h2>
+						<h3>Project Manager</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Team Section end-->
+
+
+
+
+
+	<!-- Contact section -->
+	<div id="contact" class="contact-section spad fix parallax-section">
+		<div class="container">
+			<div class="row">
+				<!-- contact info -->
+				<div class="col-md-5 col-md-offset-1 contact-info col-push">
+					<div class="section-title left">
+						<h2 style="color:#111">Contact us</h2>
+					</div>
+					<p style="color:#111">Cras ex mauris, ornare eget pretium sit amet, dignissim et turpis. Nunc nec maximus dui, vel suscipit dolor. Donec elementum velit a orci facilisis rutrum. </p>
+					<h3 class="mt60">Main Office</h3>
+					<p class="con-item">C/ Libertad, 34 <br> 05200 Arévalo </p>
+					<p class="con-item">0034 37483 2445 322</p>
+					<p class="con-item">hello@company.com</p>
+				</div>
+				<!-- contact form -->
+				<div class="col-md-6 col-pull">
+					<form method="post" class="form-class" onsubmit="return validateform()" name="frm" action="afterquery.php">
+						<div class="row">
+							<div class="col-sm-6">
+								<input type="text" name="name" placeholder="Your name" required><span id="name" class="required" ></span>
+							</div>
+							<div class="col-sm-6">
+								<input type="text" name="email" placeholder="Your email" required><span id="email" class="required" ></span>
+							</div>
+							<div class="col-sm-12">
+								<input type="text" name="subject" placeholder="Subject" required><span id="subject" class="required" ></span>
+								<textarea name="message" placeholder="Message" required></textarea><span id="message" class="required" ></span>
+								<button name="submit" type="submit" class="site-btn" id="submit" value="submit">send</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Contact section end-->
+
+
+	<!-- Footer section 
+	<footer class="footer-section" style="padding:15px;">
+		<img src="img/insta.png" alt="" style="width:20px; height:20px; border-radius:30px; border-spacing:50px;">
+		<img src="img/facebook.png" alt="" style="width:20px; height:20px; border-radius:30px; border-spacing:50px;">
+		<img src="img/twitter.png" alt="" style="width:20px; height:20px; border-radius:30px; border-spacing:50px;">				
+	</footer>-->
+	
+	<div class="browser">
+	<footer>
+    <div class="social-media-links">
+	<h1 style="align:center;font-family:Oswald, sans-serif; font-weight: 400;">Follow us on:</h1>
+      <ul>
+        <li>
+          <!-- twitter -->
+          <a href="#">
+            <svg class="glow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+              <path class="st0" d="M9.5 27.1c11.2 0 17.4-9.3 17.4-17.4 0-0.3 0-0.5 0-0.8 1.2-0.9 2.2-1.9 3-3.2 -1.1 0.5-2.3 0.8-3.5 1 1.3-0.8 2.2-2 2.7-3.4 -1.2 0.7-2.5 1.2-3.9 1.5 -1.1-1.2-2.7-1.9-4.5-1.9 -3.4 0-6.1 2.7-6.1 6.1 0 0.5 0.1 0.9 0.2 1.4C9.7 10.1 5.2 7.7 2.2 4 1.7 4.9 1.4 6 1.4 7.1c0 2.1 1.1 4 2.7 5.1 -1 0-1.9-0.3-2.8-0.8 0 0 0 0.1 0 0.1 0 3 2.1 5.4 4.9 6 -0.5 0.1-1.1 0.2-1.6 0.2 -0.4 0-0.8 0-1.1-0.1 0.8 2.4 3 4.2 5.7 4.2 -2.1 1.6-4.7 2.6-7.6 2.6 -0.5 0-1 0-1.5-0.1C2.8 26.1 6 27.1 9.5 27.1"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+              <path class="st0" d="M9.5 27.1c11.2 0 17.4-9.3 17.4-17.4 0-0.3 0-0.5 0-0.8 1.2-0.9 2.2-1.9 3-3.2 -1.1 0.5-2.3 0.8-3.5 1 1.3-0.8 2.2-2 2.7-3.4 -1.2 0.7-2.5 1.2-3.9 1.5 -1.1-1.2-2.7-1.9-4.5-1.9 -3.4 0-6.1 2.7-6.1 6.1 0 0.5 0.1 0.9 0.2 1.4C9.7 10.1 5.2 7.7 2.2 4 1.7 4.9 1.4 6 1.4 7.1c0 2.1 1.1 4 2.7 5.1 -1 0-1.9-0.3-2.8-0.8 0 0 0 0.1 0 0.1 0 3 2.1 5.4 4.9 6 -0.5 0.1-1.1 0.2-1.6 0.2 -0.4 0-0.8 0-1.1-0.1 0.8 2.4 3 4.2 5.7 4.2 -2.1 1.6-4.7 2.6-7.6 2.6 -0.5 0-1 0-1.5-0.1C2.8 26.1 6 27.1 9.5 27.1"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <!-- facebook -->
+          <a href="#">
+            <svg class="glow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+              <path class="st0" d="M28.3 0.1H1.7c-0.9 0-1.6 0.7-1.6 1.6v26.5c0 0.9 0.7 1.6 1.6 1.6H16V18.4h-3.9v-4.5H16v-3.3c0-3.9 2.4-5.9 5.8-5.9 1.6 0 3.1 0.1 3.5 0.2v4l-2.4 0c-1.9 0-2.2 0.9-2.2 2.2v2.9h4.5l-0.6 4.5h-3.9v11.5h7.6c0.9 0 1.6-0.7 1.6-1.6V1.7C29.9 0.8 29.2 0.1 28.3 0.1z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+              <path class="st0" d="M28.3 0.1H1.7c-0.9 0-1.6 0.7-1.6 1.6v26.5c0 0.9 0.7 1.6 1.6 1.6H16V18.4h-3.9v-4.5H16v-3.3c0-3.9 2.4-5.9 5.8-5.9 1.6 0 3.1 0.1 3.5 0.2v4l-2.4 0c-1.9 0-2.2 0.9-2.2 2.2v2.9h4.5l-0.6 4.5h-3.9v11.5h7.6c0.9 0 1.6-0.7 1.6-1.6V1.7C29.9 0.8 29.2 0.1 28.3 0.1z"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <!-- youtube -->
+          <a href="#">
+            <svg class="glow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+              <path class="st0" d="M29.7 9c0 0-0.3-2.1-1.2-3 -1.1-1.2-2.4-1.2-3-1.3C21.3 4.5 15 4.5 15 4.5h0c0 0-6.3 0-10.5 0.3C3.9 4.8 2.6 4.8 1.5 6 0.6 6.9 0.3 9 0.3 9S0 11.4 0 13.9v2.3C0 18.6 0.3 21 0.3 21s0.3 2.1 1.2 3c1.1 1.2 2.6 1.2 3.3 1.3C7.2 25.5 15 25.6 15 25.6s6.3 0 10.5-0.3c0.6-0.1 1.9-0.1 3-1.3 0.9-0.9 1.2-3 1.2-3s0.3-2.4 0.3-4.9v-2.3C30 11.4 29.7 9 29.7 9zM11.9 18.9l0-8.4 8.1 4.2L11.9 18.9z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+              <path class="st0" d="M29.7 9c0 0-0.3-2.1-1.2-3 -1.1-1.2-2.4-1.2-3-1.3C21.3 4.5 15 4.5 15 4.5h0c0 0-6.3 0-10.5 0.3C3.9 4.8 2.6 4.8 1.5 6 0.6 6.9 0.3 9 0.3 9S0 11.4 0 13.9v2.3C0 18.6 0.3 21 0.3 21s0.3 2.1 1.2 3c1.1 1.2 2.6 1.2 3.3 1.3C7.2 25.5 15 25.6 15 25.6s6.3 0 10.5-0.3c0.6-0.1 1.9-0.1 3-1.3 0.9-0.9 1.2-3 1.2-3s0.3-2.4 0.3-4.9v-2.3C30 11.4 29.7 9 29.7 9zM11.9 18.9l0-8.4 8.1 4.2L11.9 18.9z"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <!-- instagram -->
+          <a href="#">
+            <svg class="glow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+              <path class="st0" d="M15 2.8c4 0 4.4 0 6 0.1 1.4 0.1 2.2 0.3 2.8 0.5 0.7 0.3 1.2 0.6 1.7 1.1 0.5 0.5 0.8 1 1.1 1.7C26.8 6.8 27 7.6 27.1 9c0.1 1.6 0.1 2 0.1 6s0 4.4-0.1 6c-0.1 1.4-0.3 2.2-0.5 2.8 -0.3 0.7-0.6 1.2-1.1 1.7 -0.5 0.5-1 0.8-1.7 1.1 -0.5 0.2-1.3 0.4-2.8 0.5 -1.6 0.1-2 0.1-6 0.1s-4.4 0-6-0.1c-1.4-0.1-2.2-0.3-2.8-0.5 -0.7-0.3-1.2-0.6-1.7-1.1 -0.5-0.5-0.8-1-1.1-1.7C3.2 23.2 3 22.4 2.9 21c-0.1-1.6-0.1-2-0.1-6s0-4.4 0.1-6C3 7.6 3.2 6.8 3.4 6.2 3.7 5.5 4 5.1 4.5 4.5c0.5-0.5 1-0.8 1.7-1.1C6.8 3.2 7.6 3 9 2.9 10.6 2.8 11 2.8 15 2.8M15 0.2c-4 0-4.5 0-6.1 0.1C7.3 0.3 6.2 0.6 5.3 0.9c-1 0.4-1.8 0.9-2.6 1.7C1.8 3.5 1.3 4.3 0.9 5.3c-0.4 0.9-0.6 2-0.7 3.6C0.2 10.5 0.1 11 0.1 15c0 4 0 4.5 0.1 6.1 0.1 1.6 0.3 2.7 0.7 3.6 0.4 1 0.9 1.8 1.7 2.6 0.8 0.8 1.7 1.3 2.6 1.7 0.9 0.4 2 0.6 3.6 0.7 1.6 0.1 2.1 0.1 6.1 0.1s4.5 0 6.1-0.1c1.6-0.1 2.7-0.3 3.6-0.7 1-0.4 1.8-0.9 2.6-1.7 0.8-0.8 1.3-1.7 1.7-2.6 0.4-0.9 0.6-2 0.7-3.6 0.1-1.6 0.1-2.1 0.1-6.1s0-4.5-0.1-6.1c-0.1-1.6-0.3-2.7-0.7-3.6 -0.4-1-0.9-1.8-1.7-2.6 -0.8-0.8-1.7-1.3-2.6-1.7 -0.9-0.4-2-0.6-3.6-0.7C19.5 0.2 19 0.2 15 0.2L15 0.2z"/>
+              <path class="st0" d="M15 7.4c-4.2 0-7.6 3.4-7.6 7.6s3.4 7.6 7.6 7.6 7.6-3.4 7.6-7.6S19.2 7.4 15 7.4zM15 20c-2.7 0-5-2.2-5-5s2.2-5 5-5c2.7 0 5 2.2 5 5S17.7 20 15 20z"/>
+              <circle class="st0" cx="22.9" cy="7.1" r="1.8"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+              <path class="st0" d="M15 2.8c4 0 4.4 0 6 0.1 1.4 0.1 2.2 0.3 2.8 0.5 0.7 0.3 1.2 0.6 1.7 1.1 0.5 0.5 0.8 1 1.1 1.7C26.8 6.8 27 7.6 27.1 9c0.1 1.6 0.1 2 0.1 6s0 4.4-0.1 6c-0.1 1.4-0.3 2.2-0.5 2.8 -0.3 0.7-0.6 1.2-1.1 1.7 -0.5 0.5-1 0.8-1.7 1.1 -0.5 0.2-1.3 0.4-2.8 0.5 -1.6 0.1-2 0.1-6 0.1s-4.4 0-6-0.1c-1.4-0.1-2.2-0.3-2.8-0.5 -0.7-0.3-1.2-0.6-1.7-1.1 -0.5-0.5-0.8-1-1.1-1.7C3.2 23.2 3 22.4 2.9 21c-0.1-1.6-0.1-2-0.1-6s0-4.4 0.1-6C3 7.6 3.2 6.8 3.4 6.2 3.7 5.5 4 5.1 4.5 4.5c0.5-0.5 1-0.8 1.7-1.1C6.8 3.2 7.6 3 9 2.9 10.6 2.8 11 2.8 15 2.8M15 0.2c-4 0-4.5 0-6.1 0.1C7.3 0.3 6.2 0.6 5.3 0.9c-1 0.4-1.8 0.9-2.6 1.7C1.8 3.5 1.3 4.3 0.9 5.3c-0.4 0.9-0.6 2-0.7 3.6C0.2 10.5 0.1 11 0.1 15c0 4 0 4.5 0.1 6.1 0.1 1.6 0.3 2.7 0.7 3.6 0.4 1 0.9 1.8 1.7 2.6 0.8 0.8 1.7 1.3 2.6 1.7 0.9 0.4 2 0.6 3.6 0.7 1.6 0.1 2.1 0.1 6.1 0.1s4.5 0 6.1-0.1c1.6-0.1 2.7-0.3 3.6-0.7 1-0.4 1.8-0.9 2.6-1.7 0.8-0.8 1.3-1.7 1.7-2.6 0.4-0.9 0.6-2 0.7-3.6 0.1-1.6 0.1-2.1 0.1-6.1s0-4.5-0.1-6.1c-0.1-1.6-0.3-2.7-0.7-3.6 -0.4-1-0.9-1.8-1.7-2.6 -0.8-0.8-1.7-1.3-2.6-1.7 -0.9-0.4-2-0.6-3.6-0.7C19.5 0.2 19 0.2 15 0.2L15 0.2z"/>
+              <path class="st0" d="M15 7.4c-4.2 0-7.6 3.4-7.6 7.6s3.4 7.6 7.6 7.6 7.6-3.4 7.6-7.6S19.2 7.4 15 7.4zM15 20c-2.7 0-5-2.2-5-5s2.2-5 5-5c2.7 0 5 2.2 5 5S17.7 20 15 20z"/>
+              <circle class="st0" cx="22.9" cy="7.1" r="1.8"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer></div>
+	<!-- Footer section end -->
+
+
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/magnific-popup.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/circle-progress.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+</body>
+</html>
